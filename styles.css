@@ -1,0 +1,397 @@
+/* Navigatiebalk */
+header {
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon,
+.shop-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.shop-icon {
+  padding-left: 10px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.logo {
+  margin-left: 10px;
+  width: 120px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  padding: 1em;
+  border-radius: 50.5px;
+  background-color: #f1edd3;
+  font-weight: 900;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: #e83e3f;
+  text-decoration: none;
+}
+
+/* Algemene stijlen (desktop first) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 100%; /* Centraal plaatsen van de inhoud op desktop */
+  text-align: center;
+}
+
+.één,
+.twee,
+.drie {
+  display: flex;
+  flex-direction: row;
+}
+
+.één {
+  display: flex;
+  flex-direction: row; /* Titel en afbeelding blijven naast elkaar */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.één img {
+  width: 50%; /* Behoud de grootte van de afbeelding */
+  max-width: 600px;
+  margin-left: 150px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.één h1 {
+  font-size: 50px;
+  margin-right: 250px;
+  color: red;
+  text-align: center;
+}
+
+.twee img {
+  margin-right: 100px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.één,
+.drie {
+  justify-content: center;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 30px;
+  background-color: #f1edd3; /* Achtergrondkleur */
+}
+.één h1,
+.vier h1 {
+  color: red;
+}
+.twee h1,
+.drie h1 {
+  color: green;
+}
+
+h1 {
+  font-size: 2em;
+  padding: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-right: 50px;
+  margin-left: 100px;
+}
+
+/* Specifieke stijlen voor afbeeldingen */
+img {
+  display: block;
+  margin: 20px auto; /* Centraal plaatsen van afbeeldingen */
+  width: 50%; /* Afbeeldingen op 50% breedte van de container op desktop */
+  max-width: 600px; /* Maximale breedte beperken */
+  border-radius: 20px;
+}
+
+/* Desktop-specifieke stijlen */
+.één img {
+  width: 50%; /* Afbeelding rechts laten zweven in desktop lay-out */
+  display: inline-block;
+}
+
+.twee p {
+  text-align: left;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.drie p {
+  text-align: left;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.vier p {
+  text-align: left;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+/*//////////FOOTER///////////*/
+
+footer {
+  display: flex;
+  flex-wrap: wrap; /* Voor responsiviteit */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1edd3; /* Consistente achtergrondkleur */
+  padding: 20px 10px;
+  margin-top: 30px;
+  text-align: center; /* Zorgt voor goede uitlijning bij responsiviteit */
+}
+
+footer .contact,
+footer .logo,
+footer .nav-links {
+  flex: 1 1 30%; /* Elk blok neemt ongeveer 30% breedte */
+  margin: 10px 0; /* Ruimte tussen de blokken */
+  text-align: center;
+}
+
+.nav-links {
+  padding-top: 40px;
+}
+
+footer .contact h3 {
+  color: green;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+footer .contact p {
+  color: #333; /* Donkere tekst voor goede leesbaarheid */
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center; /* Centraal uitlijnen van pictogrammen */
+  gap: 10px; /* Ruimte tussen de pictogrammen */
+}
+
+footer .social-icons i img {
+  width: 30px; /* Pictogramgrootte */
+  height: 30px;
+  border-radius: 50%; /* Maak afbeeldingen rond voor een mooie stijl */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+footer .social-icons i img:hover {
+  transform: scale(1.2); /* Iets vergroten bij hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtiele schaduw */
+}
+
+footer .nav-links {
+  display: flex;
+  flex-direction: column; /* Links worden onder elkaar geplaatst */
+  align-items: center;
+}
+
+footer .nav-links a {
+  color: red; /* Stijlconsistentie met andere secties */
+  text-decoration: none;
+  font-size: 1.1em;
+  margin: 5px 0;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer .nav-links a:hover {
+  color: green; /* Hover-effect */
+}
+
+footer .nav-links .up-arrow img {
+  width: 40px; /* Grootte van de pijl */
+  height: 40px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+footer .nav-links .up-arrow img:hover {
+  transform: translateY(-5px); /* Pijl beweegt iets omhoog bij hover */
+}
+
+.up-arrow {
+  margin-left: auto;
+}
+
+/* Mobiele modus met media queries */
+@media (max-width: 768px) {
+  header {
+    background-color: #fff;
+    padding: 10px 20px;
+  }
+
+  body {
+    margin: 0; /* Verwijder standaardmarges */
+    padding: 0; /* Verwijder standaardpadding */
+    overflow-x: hidden; /* Voorkom horizontaal scrollen */
+  }
+
+  .menu-icon {
+    display: flex;
+    margin-right: 120px;
+    margin-left: 20px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .shop-icon {
+    margin-left: 120px;
+    margin-right: 60px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .één {
+    flex-direction: column; /* Zet de titel boven de afbeelding */
+    align-items: center; /* Centreer de inhoud */
+    text-align: center; /* Zorg dat tekst gecentreerd is */
+  }
+
+  .één h1 {
+    font-size: 1.5em; /* Maak de titel kleiner voor mobiel */
+    display: flex; /* Activeer Flexbox */
+    text-align: center;
+    margin: 0px;
+  }
+
+  .één img {
+    width: 90%; /* Laat de afbeelding de breedte van de container vullen */
+    max-width: 300px; /* Beperk de maximale breedte */
+    justify-content: center; /* Horizontaal centreren */
+    margin: 0px;
+  }
+
+  .vier img {
+    border-radius: 20px;
+  }
+
+  img {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5em; /* Kleinere lettergrootte voor mobiele schermen */
+    text-align: center;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.5; /* Meer compacte tekst */
+  }
+
+  .één,
+  .twee,
+  .drie,
+  .vier {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  footer {
+    align-items: center; /* Center alles op mobiel */
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer .nav-links a {
+    font-size: 1em; /* Kleiner lettertype op mobiel */
+  }
+
+  footer .nav-links .up-arrow img {
+    width: 35px; /* Kleinere pijl */
+    height: 35px;
+  }
+
+  footer .contact {
+    max-width: 30%;
+  }
+
+  footer .contact h3 {
+    color: green;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  footer .contact p {
+    color: #333; /* Donkere tekst voor goede leesbaarheid */
+    font-size: 10px;
+    text-wrap: wrap;
+    margin: 5px 0;
+  }
+  footer .social-icons {
+    display: flex;
+    justify-content: center; /* Centraal uitlijnen van pictogrammen */
+    gap: 10px; /* Ruimte tussen de pictogrammen */
+  }
+
+  footer .social-icons i img {
+    width: 20px; /* Pictogramgrootte */
+    height: 20px;
+    border-radius: 50%; /* Maak afbeeldingen rond voor een mooie stijl */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .logo img {
+    width: 80%;
+    margin-left: 35px;
+  }
+
+  .nav {
+    display: none;
+  }
+  .twee img {
+    display: none;
+  }
+  .up-arrow {
+    display: none;
+  }
+}
