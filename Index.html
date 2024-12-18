@@ -1,89 +1,132 @@
 <!DOCTYPE html>
-<html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Global Foodies</title>
-    <link rel="stylesheet" href="Globaldfoodies.css" />
-  </head>
-  <body>
-    <!-- Navigatiebalk -->
-    <header>
-      <nav class="navbar">
-        <img src="/Image/Hamburger menu.png" alt="Menu" class="menu-icon" />
-        <img
-          src="/Image/Global foodies.png"
-          alt="Global Foodies"
-          class="logo"
-        />
-        <nav class="nav">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#over-ons">Over ons</a></li>
-            <li><a href="#merch">Merch</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#eng">ENG</a></li>
-          </ul>
-        </nav>
-        <div>
-          <img src="/Image/mandje.png" alt="Shop" class="shop-icon" /></div>
-        </div>
-      </nav>
-    </header>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Globalfoodies</title>
+		<link rel="stylesheet" href="Checkout.css" />
+		<script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.min.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	</head>
 
-    <!-- Contactformulier -->
-    <section class="contact-form">
-      <h2>Contact</h2>
-      <form action="#" method="post">
-        <input type="email" placeholder="Email" required="" />
-        <input type="text" placeholder="Naam" required="" />
-        <textarea placeholder="Bericht" rows="5" required=""></textarea>
-        <button type="submit">Verstuur</button>
-      </form>
+	<body>
+		<!-- Header content -->
+		<header>
+			<div class="logo">
+				<img src="images/logo-global-foodies.webp" alt="" />
+			</div>
+			<nav class="navigation">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Over ons</a></li>
+					<li><a href="#">Merch</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#" class="highlight">ENG</a></li>
+				</ul>
+			</nav>
+			<div class="cart-icon">
+				<img src="images/Winkelmand.webp" style="width: 50%"alt="Cart" />
+			</div>
+		</header>
 
-      <h1>
-        Let's <span class="highlight-yellow">cook</span>
-        <span class="highlight-red">together!</span>
-      </h1>
-      <div class="social-icons">
-        <img class="icon-tiktok" src="/Foto/TikTok.webp" alt="TikTok" />
-        <img
-          class="icon-instagram"
-          src="/Foto/instagram.webp"
-          alt="Instagram"
-        />
-        <img class="icon-twitter" src="/Foto/X.webp" alt="Twitter" />
-      </div>
-      <div class="email-container">
-        <img class="icon-email" src="/Image/mail.png" alt="Email" />
-        <p>globalfoodies.official@gmail.com</p>
-      </div>
-    </section>
+		 <!-- skipping content -->
+		<main>
+			<div class="skipping-address">
+				<h2>Bezorgadres</h2>
+				<div class="payment-icons">
+					<img src="images/mastercard.webp" style="width: 40px" alt="Mastercard" />
+					<img src="images/bancontact.webp" style="width: 40px" alt="Bancontact" />
+					<img src="images/paypal.png" style="width: 25px" alt="PayPal" />
+					<img src="images/Apple pay.png" style="width: 55px" alt="Apple Pay" />
+					<img src="images/ideal.webp" style="width: 30px" alt="iDEAL" />
+				</div>
+				<form>
+					<div class="name-content">
+						<input type="text" placeholder="Naam" />
+						<input type="text" placeholder="Achternaam" />
+					</div>
+					<input type="text" placeholder="Adres" class="full-width" />
+					<div class="location-content">
+						<input type="text" placeholder="Land" />
+						<input type="text" placeholder="Stad" />
+						<input type="text" placeholder="Postcode" />
+					</div>
+					<input type="text" placeholder="Telefoonnummer" class="full-width" />
+					<input type="email" placeholder="Email" class="full-width" />
+				</form>
+			</div>
 
-    <!-- Footer -->
-    <footer>
-      <div class="contact">
-        <h3>Contact</h3>
-        <p>globalfoodies.official@gmail.com</p>
-        <div class="social-icons">
-          <i class="fab fa-tiktok"><img src="/Foto/TikTok.webp" alt="" /></i>
-          <i class="fab fa-x-twitter"><img src="/Foto/X.webp" alt="" /></i>
-          <i class="fab fa-instagram"
-            ><img src="/Foto/instagram.webp" alt=""
-          /></i>
-        </div>
-      </div>
+			 <!-- Overvieuw content -->
+			<div class="overview">
+				<h2>Overzicht</h2>
+				<ul>
+					<li>
+						<img src="images/Schort.webp" style="width: 20px" alt="1x" />
+						<span>1x</span>
+						<span>€25</span>
+					</li>
+					<li>
+						<img src="images/kookhoed.webp" style="width: 20px" alt="1x" />
+						<span>1x</span> <span>€22</span>
+					</li>
+					<li>
+						<img src="images/snijbord.webp" style="width: 20px" alt="1x" />
+						<span>1x</span><span>€35</span>
+					</li>
+					<li>
+						<img src="images/mok.webp" style="width: 20px" alt="1x" />
+						<span>1x</span><span>€10</span>
+					</li>
+				</ul>
+				<hr />
+				<div class="summary">
+					<p>Prijs <span>€92</span></p>
+					<p>Verzendkosten <style></style><span>€5</span></p>
+				</div>
+				<hr />
+				<div class="total">
+					<p>Totaalprijs <span>€97</span></p>
+				</div>
+				<div class="buttons">
+					<button class="cancel">Annuleren</button>
+					<button class="pay">Betalen</button>
+				</div>
+			</div>
+		</main>
 
-      <div class="logo">
-        <img src="/Foto/logo-global-foodies.png" alt="" />
-      </div>
-      <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Over ons</a>
-        <a href="#">Merch</a>
-        <a href="#">Contact</a>
-        <div class="up-arrow"><img src="/images/arrow.webp" alt="" /></div>
-      </div>
-    </footer>
-  </body>
+		 <!-- peper content -->
+		
+		<div class="container">
+			<img src="images/peper-links.webp" alt="Peper" class="left-image" />
+			<img src="images/peper-rechts.webp" alt="Peper gespiegeld" class="right-image" />
+		</div>
+
+		     <!-- Footer content -->
+			 <footer>
+				<div class="contact">
+					<h2>Contact</h2>
+					<p>globalfoodies.official<br />@gmail.com</p>
+					<div class="social-icons">
+						<img src="images/TikTok.webp" alt="TikTok" />
+						<img src="images/X.webp" alt="X" />
+						<img src="images/instagram.webp" alt="Instagram" />
+					</div>
+				</div>
+				<div class="footer-logo">
+					<img src="images/logo-global-foodies.webp" alt="" />
+				</div>
+				<nav>
+					<ul class="footer-nav">
+						<a href="#">Home</a>
+						<a href="#">Over ons</a>
+						<a href="#">Merch</a>
+						<a href="#">Contact</a>
+					</ul>
+				</nav>
+					<div class="arrow-up">
+						<img src="images/arrow.webp" alt="Arrow Up" />
+					</div>
+				</div>
+			</footer>
+	</body>
 </html>
