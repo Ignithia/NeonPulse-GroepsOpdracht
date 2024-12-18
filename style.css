@@ -1348,10 +1348,6 @@ header {
   margin-bottom: 20px;
 }
 
-.sidenav .button:hover {
-  background-color: #c72e3e;
-}
-
 .sidenav .lang {
   color: #e63946;
 }
