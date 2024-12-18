@@ -668,10 +668,9 @@ hr {
   display: flex;
   flex-direction: row;
 }
-
 .één {
   display: flex;
-  flex-direction: row; /* Titel en afbeelding blijven naast elkaar */
+  flex-direction: column-reverse; /* Titel en afbeelding blijven naast elkaar */
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -681,7 +680,7 @@ hr {
   width: 50%; /* Behoud de grootte van de afbeelding */
   max-width: 600px;
   margin-left: 150px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 30px;
   border-radius: 10px;
   justify-content: center;
@@ -693,11 +692,21 @@ hr {
   color: red;
   text-align: center;
 }
+.één div h1 {
+  margin-right: 250px;
+  margin-left: 250px;
+  text-align: center;
+}
+.één div {
+  display: flex;
+  align-items: center;
+}
 
 .twee img {
   margin-right: 100px;
   margin-top: 0px;
   margin-bottom: 30px;
+  min-width: 200px;
 }
 
 .één,
@@ -737,7 +746,7 @@ hr {
 /* Specifieke stijlen voor afbeeldingen */
 .over-ons img {
   display: block;
-  margin: 20px auto; /* Centraal plaatsen van afbeeldingen */
+  margin: 20px 20px; /* Centraal plaatsen van afbeeldingen */
   width: 50%; /* Afbeeldingen op 50% breedte van de container op desktop */
   max-width: 600px; /* Maximale breedte beperken */
   border-radius: 20px;
@@ -754,17 +763,28 @@ hr {
   margin-right: 100px;
   margin-left: 100px;
 }
-
+.drie {
+  padding: 50px;
+  align-items: center;
+}
 .drie p {
   text-align: left;
   margin-right: 100px;
   margin-left: 100px;
 }
 
+.vier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .vier p {
   text-align: left;
   margin-right: 200px;
   margin-left: 200px;
+}
+.vier img {
+  align-self: center;
 }
 
 /* Contactformulier */
@@ -1068,7 +1088,7 @@ header {
 }
 
 .homepage .merch-images img {
-  max-width: 100px;
+  max-width: 300px;
   height: auto;
 }
 
