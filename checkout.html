@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./Assets/Images/Logo.png" />
+    <title>Global Foodies</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/bae17dab18.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js"></script>
+  </head>
+
+  <body class="checkout">
+    <!-- Header content -->
+    <header>
+      <a class="burger" onclick="openNav()"
+        ><img src="./Assets/Images/burger.png"
+      /></a>
+      <div class="logo"><img src="./Assets/Images/Logo.png" /></div>
+      <nav class="nav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./over-ons.html">Over ons</a></li>
+          <li><a href="./merch-shop.html">Merch</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="#" class="lang">ENG</a></li>
+        </ul>
+      </nav>
+      <div class="cart-icon">
+        <a href="./winkelmand.html"
+          ><img src="./Assets/Images/Winkelkar.png"
+        /></a>
+      </div>
+    </header>
+    <div id="mySidenav" class="sidenav">
+      <div class="logo"><img src="./Assets/Images/Logo.png" /></div>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="./index.html">Home</a>
+      <a href="./over-ons.html">Over ons</a>
+      <a href="./merch-shop.html">Merch</a>
+      <a href="./contact.html">Contact</a>
+      <a href="#" class="lang">ENG ></a>
+      <button class="button">word lid!</button>
+    </div>
+    <!-- skipping content -->
+    <main>
+      <div class="skipping-address">
+        <h2>Bezorgadres</h2>
+        <div class="payment-icons">
+          <img
+            src="./Assets/Images/Mastercard.png"
+            style="width: 40px"
+            alt="Mastercard"
+          />
+          <img
+            src="./Assets/Images/Bancontact.png"
+            style="width: 40px"
+            alt="Bancontact"
+          />
+          <img
+            src="./Assets/Images/Paypal.png"
+            style="width: 25px"
+            alt="PayPal"
+          />
+          <img
+            src="./Assets/Images/ApplePay.png"
+            style="width: 55px"
+            alt="Apple Pay"
+          />
+          <img
+            src="./Assets/Images/iDeal.png"
+            style="width: 30px"
+            alt="iDEAL"
+          />
+        </div>
+        <form>
+          <div class="name-content">
+            <input type="text" placeholder="Naam" />
+            <input type="text" placeholder="Achternaam" />
+          </div>
+          <input type="text" placeholder="Adres" class="full-width" />
+          <div class="location-content">
+            <input type="text" placeholder="Land" />
+            <input type="text" placeholder="Stad" />
+            <input type="text" placeholder="Postcode" />
+          </div>
+          <input type="text" placeholder="Telefoonnummer" class="full-width" />
+          <input type="email" placeholder="Email" class="full-width" />
+        </form>
+      </div>
+
+      <!-- Overvieuw content -->
+      <div class="overview">
+        <h2>Overzicht</h2>
+        <ul>
+          <li>
+            <img
+              src="./Assets/Images/Schort.webp"
+              style="width: 20px"
+              alt="1x"
+            />
+            <span>1x</span>
+            <span>€25</span>
+          </li>
+          <li>
+            <img
+              src="./Assets/Images/Kookmuts-wit.png"
+              style="width: 20px"
+              alt="1x"
+            />
+            <span>1x</span> <span>€22</span>
+          </li>
+          <li>
+            <img
+              src="./Assets/Images/Snijbord.png"
+              style="width: 20px"
+              alt="1x"
+            />
+            <span>1x</span><span>€35</span>
+          </li>
+          <li>
+            <img src="./Assets/Images/Mok.png" style="width: 20px" alt="1x" />
+            <span>1x</span><span>€10</span>
+          </li>
+        </ul>
+        <hr />
+        <div class="summary">
+          <p>Prijs <span>€92</span></p>
+          <p>Verzendkosten <style></style><span>€5</span></p>
+        </div>
+        <hr />
+        <div class="total">
+          <p>Totaalprijs <span>€97</span></p>
+        </div>
+        <div class="buttons">
+          <button class="cancel">Annuleren</button>
+          <button class="pay">Betalen</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- peper content -->
+
+    <div class="container">
+      <img
+        src="./Assets/Images/peper-links.webp"
+        alt="Peper"
+        class="left-image"
+      />
+      <img
+        src="./Assets/Images/peper-rechts.webp"
+        alt="Peper gespiegeld"
+        class="right-image"
+      />
+    </div>
+
+    <!-- Footer content -->
+    <footer>
+      <div class="footer-contact">
+        <p class="contact">Contact</p>
+        <p class="mail">globalfoodies.official <br />@gmail.com</p>
+        <div class="social-icons">
+          <span><i class="fa-brands fa-tiktok"></i></span>
+          <span><i class="fa-brands fa-x-twitter"></i></span>
+          <span><i class="fa-brands fa-instagram"></i></span>
+        </div>
+      </div>
+      <div class="footer-logo">
+        <img src="./Assets/Images/Logo.png" />
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./over-ons.html">Over ons</a></li>
+          <li><a href="./merch-shop.html">Merch</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="up-arrow">
+          <img src="./Assets/Images/arrow-up.png" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

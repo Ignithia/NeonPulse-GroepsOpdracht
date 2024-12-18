@@ -1,8 +1,7 @@
-//dit is gedaan met chatGPT
-const menuIcon = document.getElementById("menu-icon");
-const navigation = document.getElementById("main-nav");
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
-
-menuIcon.addEventListener("click", () => {
-  navigation.classList.toggle("active");
-});
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
