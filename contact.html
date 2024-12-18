@@ -3,17 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./Assets/Images/Logo.png" />
     <title>Global Foodies</title>
     <link rel="stylesheet" href="./style.css" />
     <script
       src="https://kit.fontawesome.com/bae17dab18.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./script.js"></script>
   </head>
   <body>
     <!-- Navigatiebalk -->
     <header>
-      <a class="burger"><img src="./Assets/Images/burger.png" /></a>
+      <a class="burger" onclick="openNav()"
+        ><img src="./Assets/Images/burger.png"
+      /></a>
       <div class="logo"><img src="./Assets/Images/Logo.png" /></div>
       <nav class="nav">
         <ul>
@@ -24,9 +28,24 @@
           <li><a href="#" class="lang">ENG</a></li>
         </ul>
       </nav>
-      <div class="cart-icon"><img src="./Assets/Images/Winkelkar.png" /></div>
+      <div class="cart-icon">
+        <a href="./winkelmand.html"
+          ><img src="./Assets/Images/Winkelkar.png"
+        /></a>
+      </div>
     </header>
-
+    <div id="mySidenav" class="sidenav">
+      <div class="logo"><img src="./Assets/Images/Logo.png" /></div>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="./index.html">Home</a>
+      <a href="./over-ons.html">Over ons</a>
+      <a href="./merch-shop.html">Merch</a>
+      <a href="./contact.html">Contact</a>
+      <a href="#" class="lang">ENG ></a>
+      <button class="button">word lid!</button>
+    </div>
     <!-- Contactformulier -->
     <section class="contact-form">
       <h2>Contact</h2>

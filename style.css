@@ -17,11 +17,13 @@
 }
 
 body {
-  background-color: #f1edd3;
+  background-color: #fff;
   color: #333;
   line-height: 1.6;
 }
-
+.product-detail-body {
+  background-color: #f1edd3;
+}
 li a {
   text-decoration: none;
   color: #333;
@@ -93,7 +95,7 @@ nav ul li a:hover {
 }
 
 /* Main content styles */
-main {
+.product-detail {
   padding: 20px;
 }
 
@@ -203,22 +205,22 @@ main {
 }
 
 /* Quantity styles */
-.quantity {
+.product-detail .quantity {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.quantity .btn {
+.product-detail .quantity .btn {
   width: 75%;
   margin-left: 10px;
 }
-.quantity .btn:hover {
+.product-detail .quantity .btn:hover {
   background-color: #c72e3e;
 }
 
-.quantity input {
+.product-detail .quantity input {
   width: 50px;
   padding: 5px;
 }
@@ -244,7 +246,7 @@ main {
 }
 
 /* Button styles */
-.btn {
+.product-detail .btn {
   background-color: #000;
   color: #fff;
   border: none;
@@ -254,7 +256,7 @@ main {
   border-radius: 5px;
 }
 
-.btn:hover {
+.product-detail .btn:hover {
   background-color: #c72e3e;
 }
 
@@ -439,6 +441,270 @@ button {
   width: 500px;
   margin-bottom: 550px;
 }
+
+/*Check-Out*/
+.checkout {
+  font-family: "Roboto", sans-serif;
+  width: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/***** skipping content *****/
+
+.checkout main {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.skipping-address {
+  background-color: #f1edd3;
+  width: 950px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.skipping-address h2 {
+  margin-top: 30px;
+  margin-left: 40px;
+  font-size: 30px;
+}
+
+.payment-icons img {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.checkout form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+  gap: 15px;
+}
+
+.name-content,
+.location-content {
+  display: flex;
+  gap: 15px;
+}
+
+.name-content input,
+.location-content input {
+  flex: 1;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.checkout form input {
+  padding: 15px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #f1edd3;
+}
+
+@media (max-width: 768px) {
+  .checkout {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .checkout main {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .skipping-address,
+  .overview {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .checkout .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .checkout button {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/*Over Ons*/
+.één,
+.twee,
+.drie {
+  display: flex;
+  flex-direction: row;
+}
+
+.één {
+  display: flex;
+  flex-direction: row; /* Titel en afbeelding blijven naast elkaar */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.één img {
+  width: 50%; /* Behoud de grootte van de afbeelding */
+  max-width: 600px;
+  margin-left: 150px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.één h1 {
+  font-size: 50px;
+  margin-right: 250px;
+  color: red;
+  text-align: center;
+}
+
+.twee img {
+  margin-right: 100px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.één,
+.drie {
+  justify-content: center;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 30px;
+  background-color: #f1edd3; /* Achtergrondkleur */
+}
+.één h1,
+.vier h1 {
+  color: red;
+}
+.twee h1,
+.drie h1 {
+  color: green;
+}
+
+.over-ons h1 {
+  font-size: 2em;
+  padding: 20px;
+}
+
+.over-ons p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-right: 50px;
+  margin-left: 100px;
+}
+
+.over-ons {
+  max-width: 100%; /* Centraal plaatsen van de inhoud op desktop */
+  text-align: center;
+}
+
+/* Specifieke stijlen voor afbeeldingen */
+.over-ons img {
+  display: block;
+  margin: 20px auto; /* Centraal plaatsen van afbeeldingen */
+  width: 50%; /* Afbeeldingen op 50% breedte van de container op desktop */
+  max-width: 600px; /* Maximale breedte beperken */
+  border-radius: 20px;
+}
+
+/* Desktop-specifieke stijlen */
+.één img {
+  width: 50%; /* Afbeelding rechts laten zweven in desktop lay-out */
+  display: inline-block;
+}
+
+.twee p {
+  text-align: left;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.drie p {
+  text-align: left;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.vier p {
+  text-align: left;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+/* Contactformulier */
+.contact-form {
+  background-color: #f1edd3;
+  padding: 2%;
+  margin: 5%;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.contact-form h1 {
+  color: #fdcb58;
+  font-size: 36px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 1.2em;
+}
+
+.contact-form div {
+  justify-content: left;
+  text-align: left;
+}
+/* Flexbox container voor het icoon en de tekst */
+.email-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon-email {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  margin-left: -0.3em;
+}
+
+form input,
+form textarea {
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #fdcb58;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 /* Footer styles */
 footer {
   display: flex;
@@ -504,6 +770,184 @@ footer {
   color: #e63946;
 }
 
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  background-color: #f1edd3;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  color: black;
+}
+
+#shop-icon img {
+  height: 30px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.homepage .content-containers {
+  position: relative;
+  text-align: center;
+}
+
+.homepage .info {
+  background-color: #f1edd3;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.homepage .info {
+  position: relative;
+  text-align: center;
+}
+
+.homepage .tomaat {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+
+.homepage .pepers {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+}
+
+.homepage .info h1 {
+  font-weight: bold;
+  color: #fdc543;
+}
+
+.homepage .info p {
+  padding: 25px;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.homepage .info a {
+  background-color: #fdc543;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.homepage .merch {
+  background-color: #f1edd3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+}
+
+.homepage .merch h1 {
+  font-weight: bold;
+  color: #39ae6c;
+}
+
+.homepage .merch p {
+  padding: 30px;
+}
+
+.homepage .merch a {
+  background-color: #e83e3f;
+  color: #f1edd3;
+  padding: 10px 70px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  align-items: center;
+}
+
+.homepage .merch-content {
+  max-width: 60%;
+}
+
+.homepage .merch-imgages {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.homepage .merch-images img {
+  max-width: 100px;
+  height: auto;
+}
+
+.homepage .community,
+.homepage .eten {
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.homepage .btn img {
+  width: 40 px;
+  height: auto;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+}
+
 /* Mobile styles */
 @media only screen and (max-width: 600px) {
   .burger {
@@ -520,10 +964,12 @@ footer {
     justify-content: center;
   }
   header .logo {
+    width: 100%;
     align-self: center;
   }
   header .logo img {
     width: 40%;
+    height: auto;
     align-self: center;
     display: block;
     margin: 0 auto;
@@ -568,6 +1014,55 @@ footer {
   .bag-btn {
     display: none;
   }
+  .home page.tomaat {
+    top: 0px;
+    left: 10px;
+    width: 70px;
+  }
+
+  .homepage .pepers {
+    bottom: 20px;
+    right: 10px;
+    width: 100px;
+  }
+
+  .homepage .info p {
+    padding: 15px; /* This removes the padding for small screens */
+    padding-left: 50px; /* Optional: Remove left padding */
+    padding-right: 50px;
+  }
+
+  .homepage .merch {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .homepage .merch-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .homepage .merch-images {
+    justify-content: center;
+  }
+
+  .homepage .navbar.active .nav-links {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .homepage .btn img {
+    display: none;
+  }
+
   .footer-logo img {
     width: 40%;
     min-width: 100px;
@@ -593,63 +1088,282 @@ footer {
   }
 }
 
-/* Contactformulier */
-.contact-form {
-  background-color: #f1edd3;
-  padding: 2%;
-  margin: 5%;
+/* Mobiele modus met media queries */
+@media (max-width: 768px) {
+  header {
+    background-color: #fff;
+    padding: 10px 20px;
+  }
+
+  body {
+    margin: 0; /* Verwijder standaardmarges */
+    padding: 0; /* Verwijder standaardpadding */
+    overflow-x: hidden; /* Voorkom horizontaal scrollen */
+  }
+
+  .menu-icon {
+    display: flex;
+    margin-right: 120px;
+    margin-left: 20px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .shop-icon {
+    margin-left: 120px;
+    margin-right: 60px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .één {
+    flex-direction: column; /* Zet de titel boven de afbeelding */
+    align-items: center; /* Centreer de inhoud */
+    text-align: center; /* Zorg dat tekst gecentreerd is */
+  }
+
+  .één h1 {
+    font-size: 1.5em; /* Maak de titel kleiner voor mobiel */
+    display: flex; /* Activeer Flexbox */
+    text-align: center;
+    margin: 0px;
+  }
+
+  .één img {
+    width: 90%; /* Laat de afbeelding de breedte van de container vullen */
+    max-width: 300px; /* Beperk de maximale breedte */
+    justify-content: center; /* Horizontaal centreren */
+    margin: 0px;
+  }
+
+  .vier img {
+    border-radius: 20px;
+  }
+
+  .over-ons img {
+    width: 90%;
+  }
+
+  .over-ons h1 {
+    font-size: 1.5em; /* Kleinere lettergrootte voor mobiele schermen */
+    text-align: center;
+  }
+
+  .over-ons p {
+    font-size: 1em;
+    line-height: 1.5; /* Meer compacte tekst */
+  }
+
+  .één,
+  .twee,
+  .drie,
+  .vier {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  .twee img {
+    display: none;
+  }
+  .up-arrow {
+    display: none;
+  }
+}
+
+.merch-shop section {
+  position: relative;
+}
+
+.merch-shop section h2 {
+  color: #fdc543;
   text-align: center;
+}
+
+.merch-shop .container {
+  position: relative;
+}
+
+.merch-shop .hand-fruit {
+  position: absolute;
+  top: -40%;
+  right: 0;
+  z-index: 1;
+}
+
+.merch-shop.hand-fruit img {
+  width: 200px;
+  object-fit: cover;
+  border-radius: 0 0 1% 1%;
+}
+
+.merch-shop .achtergrondkleur {
+  background-color: #f1edd3;
+  border-radius: 1%;
+  padding: 20px;
+  margin-top: 150px;
+  position: relative;
+}
+
+.merch-shop article img {
+  background-color: #fff;
+  padding: 5px;
   border-radius: 30px;
 }
 
-.contact-form h1 {
-  color: #fdcb58;
-  font-size: 36px;
-  text-align: left;
+.merch-shop .ondertitel-item {
   display: flex;
-  flex-direction: column;
-}
-.contact-form h2 {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-align: left;
-  margin-left: 1.2em;
-}
-
-.contact-form div {
-  justify-content: left;
-  text-align: left;
-}
-/* Flexbox container voor het icoon en de tekst */
-.email-container {
-  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.icon-email {
-  width: 50px;
-  height: auto;
-  margin-right: 10px;
-  margin-left: -0.3em;
-}
-
-form input,
-form textarea {
-  width: 90%;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1em;
-}
-
-form button {
-  background-color: #fdcb58;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1em;
+.merch-shop .ondertitel-item p {
   font-weight: bold;
-  cursor: pointer;
+}
+
+.merch-shop .prijs-mandje {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.merch-shop .prijs-mandje p {
+  margin-right: 10px;
+}
+
+.merch-shop .cart-image {
+  width: 20px;
+  height: auto;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.merch-shop .achtergrondkleur > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.merch-shop article {
+  flex-basis: 45%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.merch-shop article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.merch-shop .ondertitel-item {
+  margin-top: 10px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .merch-shop article {
+    flex-basis: 45%;
+  }
+  .merch-shop .hand-fruit {
+    position: absolute;
+    top: -13%;
+    right: 0;
+    z-index: 1;
+  }
+  .merch-shop.hand-fruit img {
+    width: 120px;
+  }
+}
+
+@media (min-width: 769px) {
+  .merch-shop article {
+    flex-basis: 22%;
+  }
+}
+
+/*Side Navigation*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fafafa;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav img {
+  width: 50%;
+  height: auto;
+}
+.sidenav .logo {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+  margin-left: 32px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav .button {
+  background-color: black;
+  color: white;
+  margin-left: 5px;
+  padding: 5px 60px; /* Binnenruimte in de knop */
+  border-radius: 50px; /* Ronde hoeken */
+  cursor: pointer; /* Cursor verandert in een handje */
+  font-weight: bold;
+  font-size: 25px; /* Grotere tekst */
+  transition: background-color 0.3s ease; /* Zachte overgang */
+  margin-bottom: 20px;
+}
+
+.sidenav .button:hover {
+  background-color: #c72e3e;
+}
+
+.sidenav .lang {
+  color: #e63946;
+}
+.sidenav .lang:hover {
+  color: #333;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
