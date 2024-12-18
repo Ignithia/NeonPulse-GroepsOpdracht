@@ -16,6 +16,10 @@
   color: #fff;
 }
 
+.winkelmand .cart {
+  margin: 4%;
+}
+
 body {
   background-color: #fff;
   color: #333;
@@ -310,6 +314,121 @@ nav ul li a:hover {
 .suggestion-details p {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+/*winkelmand*/
+.winkelmand .cart-icon img {
+  width: 20px;
+  padding-right: 60px;
+  height: auto;
+}
+
+.winkelmand .cart {
+  background-color: #f1edd3;
+  border-radius: 40px;
+  padding: 2rem;
+  width: 90%;
+  margin-top: 10%;
+}
+
+.winkelmand .cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.winkelmand .cart-header h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0;
+}
+
+.winkelmand .cart-header .details {
+  display: flex;
+  gap: 3rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 22px;
+}
+
+.winkelmand .cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.winkelmand .cart-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 14px;
+}
+
+.winkelmand .cart-item p {
+  flex: 2;
+  margin: 0 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+}
+
+.winkelmand .quantity button {
+  background-color: #fdc54370;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.winkelmand .details {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-right: 20px;
+}
+
+.winkelmand .price {
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.winkelmand .remove {
+  color: black;
+  font-size: 1.5rem;
+  padding-left: 20px;
+}
+
+.winkelmand .cart-price {
+  background-color: #f1edd3;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  width: 90%;
+  margin-top: 3%;
+}
+
+.winkelmand .total-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 8px;
+}
+
+.winkelmand .checkout-button {
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5em 2em;
+  font-size: 0.9em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.winkelmand a.checkout-button:hover {
+  background-color: #000000;
 }
 
 /* Bag button styles */
